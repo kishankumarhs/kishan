@@ -97,8 +97,10 @@ $(function () {
         $('.progress_inner').css('width', '90%');
 
     }
-    python.click(() => {
+    python.click((e) => {
+        e.preventDefault();
         h1.text('Python')
+        $('.skill_img img').attr('src', 'static/python.png');
         $('.progress_inner').css('width', '90%');
         $('.progress_inner p ').text('90%')
         frameworks.html(` 
@@ -110,8 +112,11 @@ $(function () {
         `)
 
     })
-    php.click(() => {
+    php.click((e) => {
+        e.preventDefault();
         h1.text('PHP')
+        $('.skill_img img').attr('src', 'static/php.png');
+        $('.skill_img img').set
         $('.progress_inner p ').text('80%')
         $('.progress_inner').css('width', '80%');
         frameworks.html(` 
@@ -123,8 +128,11 @@ $(function () {
 
 
     })
-    web.click(() => {
+    web.click((e) => {
+        e.preventDefault();
         h1.text('Web Development')
+        $('.skill_img img').attr('src', 'static/web.png');
+
         $('.progress_inner').css('width', '95%');
         $('.progress_inner p ').text('95%');
         frameworks.html(` <h1>Html</h1>
@@ -136,10 +144,12 @@ $(function () {
         `)
 
     })
-    Android.click(() => {
+    Android.click((e) => {
+        e.preventDefault();
         h1.text('Android')
         // $('#simg').attr('src', null);
 
+        $('.skill_img img').attr('src', 'static/android.png');
         
         $('.progress_inner').css('width', '60%');
         $('.progress_inner p ').text('60%')
@@ -149,8 +159,11 @@ $(function () {
         `)
 
     })
-    js.click(() => {
+    js.click((e) => {
+        e.preventDefault();
         h1.text('JavaScript')
+        $('.skill_img img').attr('src', 'static/js.png');
+
         $('.progress_inner').css('width', '92%');
         $('.progress_inner p ').text('92%');
         frameworks.html(`

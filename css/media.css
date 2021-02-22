@@ -14,6 +14,8 @@
         margin: 0;
         padding: 0;
     }
+.go_top{
+display:none;}
     .loader {
         width: 100%;
         height: 100%;
@@ -46,6 +48,8 @@
         margin: 0;
         padding: 0;
     }
+.go_top{
+display:none;}
     body {
         overflow-x: hidden;
     }
@@ -307,6 +311,8 @@
         margin: 0;
         padding: 0;
     }
+.go_top{
+display:none;}
     body {
         overflow-x: hidden;
     }
@@ -571,7 +577,9 @@
         top: 0;
         left: 0;
         right: 0;
-    }
+    }.go_top{
+display:none;}
+
     span.dot {
         width: 40px;
         height: 40px;
@@ -596,6 +604,8 @@
         padding: 0;
         margin: 0;
     }
+.go_top{
+display:none;}
     body {
         overflow-x: hidden;
     }

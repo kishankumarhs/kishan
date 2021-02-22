@@ -1,6 +1,9 @@
 window.onload = () => {
     AOS.init()
- console.log(window.innerWidth)
+  
+ if(window.innerWidth<=700){
+     $(".go_top").css("display","none");
+}
           setTimeout(()=>{
             var loader= document.getElementsByClassName('loader');
             loader[0].style.display="none"

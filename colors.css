@@ -1,0 +1,14 @@
+:root{
+/* gradiants */
+--backg: linear-gradient(#265E76,#E8F3FC);
+/* text: */
+--bold_black : #041A32 ;
+--bold_light:#E8F3FC;
+--small_text_back:#4FADF9;
+--small_text_light:#265E76;
+
+/* background: */
+ --light_fill : #E8F3FC;
+ --bold_fill : #002F56;
+ --semiLight_fill :#C7E6FF;
+}

@@ -380,7 +380,7 @@ div{
     min-height: 100vh;
     background: url(images/musicOP.svg), var(--semiLight_fill);
     background-position: 311px 60%;
-    background-size: 122% 150%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .skills{

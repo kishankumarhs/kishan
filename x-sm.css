@@ -13,7 +13,7 @@
      --bold_fill : #002F56;
      --semiLight_fill :#C7E6FF;
     }
-@media screen and (max-width:767.98px) {
+@media screen and (max-width:575.98px) {
 .leaf{
     width: 150px;
     height: 150px;
@@ -156,8 +156,8 @@
     letter-spacing: 2px;
 }
 .ciclegraph {
-    width: 400px;
-    height: 450px;
+    width: 300px;
+    height: 400px;
     border-radius: 0%;
 
 }
@@ -245,7 +245,7 @@
     flex-direction: column-reverse;
 }
 .form{
-    width: 400px;
+    width: 100%;
 }
 .lets{
     width: 100%;

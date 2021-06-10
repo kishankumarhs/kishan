@@ -13,10 +13,10 @@
      --bold_fill : #002F56;
      --semiLight_fill :#C7E6FF;
     }
-@media screen and (max-width:767.98px) {
+@media screen and (max-width:991.98px) {
 .leaf{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 }
 .logo_container{
     /* margin-left: 10px; */
@@ -51,9 +51,9 @@
         220deg
         ,#265E76 58%,#E8F3FC 100%);
     background-size: 100%,cover;
-    background-position: 12px 100%,center;
-    min-height: 40vh;
-    height: 40vh;
+    background-position: 50px 100%,center;
+    min-height: 60vh;
+    height: 60vh;
 }
 .heading{
     font-size: 1rem;
@@ -161,12 +161,13 @@
     border-radius: 0%;
 
 }
-.ciclegraph .circle{
-    width: 4rem;
-    height: 4rem;
+ .ciclegraph .circle{
+    width: 5rem;
+    height: 5rem; 
     /* transform: none; */
-    margin: 0;
+    /* margin: 0; */
 }
+/*
 .ciclegraph #html {
     top: 0px;
     left:0px;
@@ -218,7 +219,7 @@
     left: 40%;
     margin: 0;
 }
-
+ */
 
 .circle p {
     font-size: 0.7rem;
@@ -229,8 +230,8 @@
     top:50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     z-index: 2;
     /* background: cornsilk; */
@@ -243,6 +244,8 @@
 }
 .form_container{
     flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
 }
 .form{
     width: 400px;

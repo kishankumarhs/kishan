@@ -7,16 +7,31 @@
 var s = document.getElementById('skills');
 s.onmouseover = () => {
  // alert ('over')
- document.querySelectorAll('.ciclegraph').forEach((ciclegraph) => {
-     let circles = ciclegraph.querySelectorAll('.circle')
-     let angle = 360 - 90, dangle = 360 / circles.length
-     for (let i = 0; i < circles.length; ++i) {
-         let circle = circles[i]
-         angle += dangle
-         circle.style.opacity=1
-         circle.style.transform = `rotate(${angle}deg) translate(${ciclegraph.clientWidth / 2}px) rotate(-${angle}deg)`
-     }
- })
+ if(window.innerWidth>=767){
+    document.querySelectorAll('.ciclegraph').forEach((ciclegraph) => {
+        let circles = ciclegraph.querySelectorAll('.circle')
+        let angle = 360 - 90, dangle = 360 / circles.length
+        for (let i = 0; i < circles.length; ++i) {
+            let circle = circles[i]
+            angle += dangle
+            circle.style.opacity=1
+            circle.style.transform = `rotate(${angle}deg) translate(${ciclegraph.clientWidth / 2}px) rotate(-${angle}deg)`
+        }
+    })
+ }
+//   else{
+//     document.querySelectorAll('.ciclegraph').forEach((ciclegraph) => {
+//         let circles = ciclegraph.querySelectorAll('.circle')
+//         let angle = 360-100, dangle = 360 / circles.length
+//         for (let i = 0; i < circles.length; ++i) {
+//             let circle = circles[i]
+//             angle += dangle
+//             circle.style.opacity=1
+//             circle.style.transform = `rotate(${angle}deg) translate(${ciclegraph.clientWidth /2.5}px) rotate(-${angle}deg)`
+//         }
+//     })
+//   }
+ 
 }
 // s.onmouseleave = ()=>{
 //  // alert('leave')

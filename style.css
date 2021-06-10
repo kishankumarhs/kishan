@@ -295,15 +295,7 @@ div{
   margin: calc(100px / 2 + 0px);
 }
 
-/* .ciclegraph:before {
-	content: "";
-	position: absolute;
-	top: 0; left: 0;
-  border: 2px solid teal;
-  width: calc( 100% - 2px * 2);
-  height: calc( 100% - 2px * 2 );
-  border-radius: 50%;
-} */
+
 
 .ciclegraph .circle {
 	position: absolute;
@@ -342,6 +334,10 @@ div{
 .skills_list{
     margin: 40px 0;
 }
+.circle p {
+    text-transform: capitalize;
+    font-family: manrope_semibold;
+}
 .path-1,.path-2{
     position: absolute;
     top: 50%;
@@ -368,14 +364,14 @@ div{
     bottom: -20px;
     width: 100%;
     height: 10px;
-    background: var(--semiLight_fill);
+    background: var(--light_fill) ;
 
 }
 .progress_inner{
     position: absolute;
     top: 0;
     left: 0;
-    background: cyan;
+    background:cyan;
     width: 50%;
     height: 100%;
 }

@@ -20,9 +20,15 @@
 }
 .logo_container{
     /* margin-left: 10px; */
+    justify-content: center;
+    align-items: center;
     height: 30px;
     width: 30px;
     background: var(--bold_black);
+
+}
+.logo_container img{
+    margin-left: -50%;
 }
 .logo_name{
     font-size: 12px;
@@ -124,6 +130,7 @@
     font-size: 12px;
     margin-top: 40px;
     width: 90%;
+    letter-spacing: 2px;
     line-height: 39px;
 }
 .Me{
@@ -146,27 +153,90 @@
 .page p {
     font-size: 12px;
     line-height: 35px;
+    letter-spacing: 2px;
 }
 .ciclegraph {
     width: 300px;
-    height: 300px;
-    margin: calc(50px / 2 + 0px);
-}
-.ciclegraph .circle {
-  width: 50px;
-  height: 50px;
-  margin: calc(50px / 2 + 0px);
+    height: 400px;
+    border-radius: 0%;
 
 }
+.ciclegraph .circle{
+    width: 4rem;
+    height: 4rem;
+    /* transform: none; */
+    margin: 0;
+}
+.ciclegraph #html {
+    top: 0px;
+    left:0px;
+}
+.ciclegraph #js{
+    top: 7em;
+    left:0px;
+}
+
+.ciclegraph #jquery{
+    top: 14em;
+    left:0px;
+}
+
+.ciclegraph  #bootstrap{
+    top: 21em;
+    left:0px;
+}
+.ciclegraph #inkscape{
+    top: 0;
+    left: 80%;
+    margin: 0;
+}
+.ciclegraph #pyhton{
+    top: 7em;
+    left: 80%;
+
+    margin: 0;
+}
+.ciclegraph #react{
+    top: 14em;
+    left: 80%;
+
+    margin: 0;
+}
+.ciclegraph #php{
+    top: 21em;
+    left: 80%;
+
+    margin: 0;
+}
+.ciclegraph #ui {
+    top:85%;
+    left: 40%;
+    margin: 0;
+}
+.ciclegraph #css{
+    top: 0;
+    left: 40%;
+    margin: 0;
+}
+
+
+.circle p {
+    font-size: 0.7rem;
+}
 .ciclegraph .center{
+    /* display: none; */
     position: absolute;
     top:50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     z-index: 2;
+    /* background: cornsilk; */
+}
+.progress{
+    height: 5px;
 }
 .contact{
     background: var(--semiLight_fill);
@@ -207,9 +277,13 @@ align-items: center;
     align-items: center;
     border-radius: 40px ;
     background: var(--semiLight_fill);
-    /* box-shadow: 7px 7px 15px #a3bdd1,
-    -7px -7px 15px #ebffff; */
+    box-shadow: 7px 7px 15px #a3bdd1,
+    -7px -7px 15px #ebffff;
     cursor: pointer;
+}
+.contact_button:hover{
+    box-shadow: inset 7px 7px 15px #a3bdd1,
+  inset  -7px -7px 15px #ebffff;
 }
 .contact_button > .icon {
     padding: 10px;
@@ -229,5 +303,10 @@ align-items: center;
     color: var(--small_text_light);
     text-align: center;
     line-height: 40px;
+}
+.skill_list{
+    width:100%;
+    justify-content: center;
+    align-items: center;
 }
 }

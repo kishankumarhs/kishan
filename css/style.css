@@ -64,7 +64,6 @@ html{
             flex-direction: column;
     min-height: 60vh;
     height: 60vh;
-    background-image: url(../images/nature_-1.svg),-o-linear-gradient(158deg,#265E76 19%,#E8F3FC 49%);
     background-image: url(../images/nature_-1.svg),linear-gradient(292deg,#265E76 19%,#E8F3FC 49%);
     background-position: 129% 118%,center;
     background-repeat: no-repeat;

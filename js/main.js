@@ -35,3 +35,8 @@ s.onmouseleave = ()=>{
  
 }
 
+var mail = document.getElementById("Mail");
+mail.onClick =  ()=>{
+window.open('mailto:hskishanraj@gmail.com');
+}
+

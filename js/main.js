@@ -41,6 +41,7 @@ s.onmouseleave = () => {
 
 document.body.onload = () => {
 
+
     let year = document.getElementById("year");
     let currentYear = new Date().getFullYear();
     year.innerHTML = currentYear;

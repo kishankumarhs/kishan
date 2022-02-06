@@ -899,3 +899,11 @@ ul li a {
 .whatsapp {
     left: 30px;
 }
+
+.simpletext {
+    position: absolute;
+    color: #b3d5f0;
+    font-size: 10vw;
+    z-index: -1;
+    transform: rotate(-90deg);
+}

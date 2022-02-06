@@ -23,44 +23,47 @@ document.body.onload = () => {
     var menu = document.getElementById('menu');
     var open = false;
 
-    menu.addEventListener("click", (e) => {
-        e.preventDefault();
-        document.getElementsByClassName("menu-items")[0].style.left = open ? "-100%" : 0
-        // document.getElementsByClassName("fa-times")[0].style.display = open ? 'block' : "none"
-        // document.getElementsByClassName("fa-bars")[0].style.display = open ? 'block' : "none"
-        open = !open
-    })
+    if (menu) {
+        menu.addEventListener("click", (e) => {
+            e.preventDefault();
+            document.getElementsByClassName("menu-items")[0].style.left = open ? "-100%" : 0
+            // document.getElementsByClassName("fa-times")[0].style.display = open ? 'block' : "none"
+            // document.getElementsByClassName("fa-bars")[0].style.display = open ? 'block' : "none"
+            open = !open
+        })
+    }
     var s = document.getElementById('skills');
-    s.onmouseover = () => {
-        if (window.innerWidth >= 767) {
-            document.querySelectorAll('.ciclegraph').forEach((ciclegraph) => {
-                let circles = ciclegraph.querySelectorAll('.circle')
-                let angle = 360 - 90, dangle = 360 / circles.length
-                for (let i = 0; i < circles.length; ++i) {
-                    let circle = circles[i]
-                    angle += dangle
-                    circle.style.opacity = 1
-                    circle.style.transform = `rotate(${angle}deg) translate(${ciclegraph.clientWidth / 2}px) rotate(-${angle}deg)`
-                }
-            })
+    if (s) {
+        s.onmouseover = () => {
+            if (window.innerWidth >= 767) {
+                document.querySelectorAll('.ciclegraph').forEach((ciclegraph) => {
+                    let circles = ciclegraph.querySelectorAll('.circle')
+                    let angle = 360 - 90, dangle = 360 / circles.length
+                    for (let i = 0; i < circles.length; ++i) {
+                        let circle = circles[i]
+                        angle += dangle
+                        circle.style.opacity = 1
+                        circle.style.transform = `rotate(${angle}deg) translate(${ciclegraph.clientWidth / 2}px) rotate(-${angle}deg)`
+                    }
+                })
+            }
         }
-    }
-    s.onmouseleave = () => {
-        if (window.innerWidth >= 767) {
-            document.querySelectorAll('.ciclegraph').forEach((ciclegraph) => {
-                let circles = ciclegraph.querySelectorAll('.circle')
-                for (let i = 0; i < circles.length; ++i) {
-                    let circle = circles[i]
-                    circle.style.transform = `translate(-50%,-50%)`
-                    circle.style.zIndex = 1
-                    circle.style.opacity = 0
-                }
-            })
+        s.onmouseleave = () => {
+            if (window.innerWidth >= 767) {
+                document.querySelectorAll('.ciclegraph').forEach((ciclegraph) => {
+                    let circles = ciclegraph.querySelectorAll('.circle')
+                    for (let i = 0; i < circles.length; ++i) {
+                        let circle = circles[i]
+                        circle.style.transform = `translate(-50%,-50%)`
+                        circle.style.zIndex = 1
+                        circle.style.opacity = 0
+                    }
+                })
+            }
+
         }
 
     }
-
-
 }
 
 
@@ -74,19 +77,19 @@ pageTransition = () => {
 
     timeline.to(".page-transition", {
         duration: 1,
-        top: "0%",
-        left: "-100%",
+        height: "100%",
+        top: "0%"
     });
 
     timeline.to(".page-transition", {
-        duration: 2,
-        // top: "100%",
-        left: "100%",
+        duration: .8,
+        height: "100%",
+        top: "100%",
         delay: .3
     });
 
     timeline.set(".page-transition", {
-        left: "-100%"
+        top: "-100%"
     });
 }
 
@@ -100,7 +103,7 @@ mainAnimation = () => {
         stagger: {
             amount: .4
         },
-        delay: 2
+        delay: .8
     });
 }
 
@@ -113,25 +116,25 @@ delay = (n) => {
     })
 }
 
-barba.init({
-    sync: true,
-    transitions: [
-        {
-            async leave(data) {
-                const done = this.async();
-                pageTransition();
-                await delay(1000);
-                done();
-            },
+// barba.init({
+//     sync: true,
+//     transitions: [
+//         {
+//             async leave(data) {
+//                 const done = this.async();
+//                 pageTransition();
+//                 await delay(1000);
+//                 done();
+//             },
 
-            async enter(data) {
-                mainAnimation();
-            },
+//             async enter(data) {
+//                 mainAnimation();
+//             },
 
-            async once(data) {
-                mainAnimation();
-            }
-        }
-    ]
-});
+//             async once(data) {
+//                 mainAnimation();
+//             }
+//         }
+//     ]
+// });
 

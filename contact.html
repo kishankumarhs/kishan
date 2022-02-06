@@ -14,8 +14,8 @@
     <title>Mnemonicx</title>
 </head>
 
-<body>
-    <main class="main" data-barba="wrapper">
+<body data-barba="wrapper">
+    <main class="main" data-barba="container" data-barba-namespace="contact-section">
         <div class="loader">
             <div class="page-transition">
                 <span id="h1">Reach us</span>
@@ -31,38 +31,86 @@
                 <i class="fa fa-phone" aria-hidden="true"></i>
             </a>
         </div>
-        <section class="header" data-barba="container" data-barba-namespace="home-section">
-            <div class="top">
-                <div class="logo">
-                    <div class="logo_container">
-                        <img src="images/mainbg.svg" alt="" srcset="">
+        <section>
+            <section class="header">
+                <div class="top">
+                    <div class="logo">
+                        <div class="logo_container">
+                            <img src="images/mainbg.svg" alt="" srcset="">
+                        </div>
+                        <p class="logo_name">Mnemonicx</p>
                     </div>
-                    <p class="logo_name">Mnemonicx</p>
-                </div>
-                <div class="menu" id="menu">
+                    <div class="menu" id="menu">
 
-                    <i class="fa fa-bars" aria-hidden="true"></i>
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+                    <ul class="menu-items">
+                        <li><a href="index.htm"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                        <li class="active"><a href="contact.html"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="active"><a href="about.html"><i class="fa fa-user" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="menu-items">
-                    <li><a href="index.htm"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-                    <li class="active"><a href="contact.html"><i class="fa fa-phone" aria-hidden="true"></i></a>
-                    </li>
-                    <li class="active"><a href="about.html"><i class="fa fa-user" aria-hidden="true"></i></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="hero">
-                <div class="heading">
-                    <h3 class="main_head">
-                        Reach Us
-                    </h3>
-                    <p>
-                        We give You Best Solution
-                    </p>
+                <div class="hero">
+                    <div class="heading">
+                        <h3 class="main_head">
+                            Reach Us
+                        </h3>
+                        <p>
+                            We give You Best Solution
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+            <section class="contact">
+                <div class="service_head me_head contact_head ">
+                    <h3>Contact</h3>
+                    <span></span>
+                </div>
+                <div class="form_container">
+                    <div class="form" id="form">
+                        <div class="fMain">
+                            <div class="social">
+                                <div class="s_icon">
+                                    <img src="images/github-1.svg" alt="" srcset="">
+                                </div>
+                                <div class="s_icon">
+                                    <img src="images/fiverr-1.svg" alt="" srcset="">
+
+                                </div>
+                                <div class="s_icon">
+                                    <img src="images/upwork-1.svg" alt="" srcset="">
+
+                                </div>
+                                <div class="s_icon">
+                                    <img src="images/freelancer-1.svg" alt="" srcset="">
+
+                                </div>
+                            </div>
+                            <div class="inputs">
+                                <input type="text" placeholder="email" class="email">
+                                <input type="text" placeholder="message" class="text">
+
+                                </input>
+                                <div class="contact_button button">
+                                    <p>Reach us</p>
+                                    <div class="icon">
+                                        <img src="images/arrow-right-1.svg" alt="" srcset="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lets">
+                        <h1>Let's work Togther</h1>
+                    </div>
                 </div>
 
-            </div>
+            </section>
         </section>
+
         <!-- <section class="service">
             <div class="service_head">
                 <h3>services</h3>
@@ -210,51 +258,7 @@
                 </div>
             </div>
         </section> -->
-        <section class="contact">
-            <div class="service_head me_head contact_head ">
-                <h3>Contact</h3>
-                <span></span>
-            </div>
-            <div class="form_container">
-                <div class="form" id="form">
-                    <div class="fMain">
-                        <div class="social">
-                            <div class="s_icon">
-                                <img src="images/github-1.svg" alt="" srcset="">
-                            </div>
-                            <div class="s_icon">
-                                <img src="images/fiverr-1.svg" alt="" srcset="">
 
-                            </div>
-                            <div class="s_icon">
-                                <img src="images/upwork-1.svg" alt="" srcset="">
-
-                            </div>
-                            <div class="s_icon">
-                                <img src="images/freelancer-1.svg" alt="" srcset="">
-
-                            </div>
-                        </div>
-                        <div class="inputs">
-                            <input type="text" placeholder="email" class="email">
-                            <input type="text" placeholder="message" class="text">
-
-                            </input>
-                            <div class="contact_button button">
-                                <p>Reach us</p>
-                                <div class="icon">
-                                    <img src="images/arrow-right-1.svg" alt="" srcset="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="lets">
-                    <h1>Let's work Togther</h1>
-                </div>
-            </div>
-
-        </section>
         <footer>
             <p>&copy; &nbsp; <span id="year"></span> All rights are reserved by <a href="http://">Mnemonicx</a>
             </p>

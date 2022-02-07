@@ -781,6 +781,7 @@ body>section>footer>p:nth-child(1)>a {
 
 .menu {
     position: fixed;
+    top: 40px;
     right: 20px;
     cursor: pointer;
     border-radius: 50%;

@@ -1,5 +1,4 @@
 
-
 document.body.onload = () => {
 
     VANTA.BIRDS({
@@ -115,7 +114,13 @@ delay = (n) => {
         }, n);
     })
 }
+// barba.use(barbaCss);
 
+// barba.init({
+//     transitions: [{
+//         once: () => { }
+//     }]
+// })
 // barba.init({
 //     sync: true,
 //     transitions: [

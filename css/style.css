@@ -76,10 +76,7 @@ html {
     flex-direction: column;
     min-height: 100vh;
     height: 100vh;
-    /* background-image: url(../images/nature_-1.svg), linear-gradient(292deg, #265E76 19%, #E8F3FC 49%); */
-    background-position: 129% 118%, center;
-    background-repeat: no-repeat;
-    background-size: 67% 90%, contain;
+    background: var(--bold_light) !important;
 }
 
 .logo_container img {
@@ -905,7 +902,9 @@ ul li a {
 .simpletext {
     position: absolute;
     color: #b3d5f0;
-    font-size: 10vw;
-    z-index: -1;
+    right: 1%;
+    font-size: 8vw;
+    z-index: 0;
+    text-transform: uppercase;
     transform: rotate(-90deg);
 }
